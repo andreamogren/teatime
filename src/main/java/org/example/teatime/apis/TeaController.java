@@ -79,7 +79,7 @@ public class TeaController {
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Failed to delete tea");
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/id/{id}")
     @Operation(summary = "Get a tea by ID", description = "Retrieve a tea by its ID")
     public ResponseEntity<?> findOne(@PathVariable Long id) {
         try {
